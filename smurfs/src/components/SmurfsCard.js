@@ -1,5 +1,5 @@
 import React from 'react';
-import './SmurfsCard.scss'
+import './SmurfsCard.css'
 
 export default function SmurfsCard(props) {
 
