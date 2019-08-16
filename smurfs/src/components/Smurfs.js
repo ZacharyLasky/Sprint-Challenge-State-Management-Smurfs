@@ -2,15 +2,15 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { getData } from '../actions';
 import SmurfsCard from './SmurfsCard';
+import './Smurfs.css';
 
 function Smurfs(props) {
 
   return (
-    <>
-      <h1>Smurfs Component</h1>
-      <button onClick={props.getData}>click</button>
+    <div className="smurfs">
+      <button onClick={props.getData}>Click To See Smurfs</button>
       <SmurfsCard smurfs={props.smurfs}/>
-    </>
+    </div>
   )
 }
 

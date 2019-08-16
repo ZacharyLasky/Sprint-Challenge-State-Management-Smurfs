@@ -3,7 +3,6 @@ import axios from 'axios';
 export const FETCH_SMURFS_START = 'FETCH_SMURFS_START';
 export const FETCH_SMURFS_SUCCESS = 'FETCH_SMURFS_SUCCESS';
 export const FETCH_SMURFS_FAILURE = 'FETCH_SMURFS_FAILURE';
-// export const POST_SMURFS = "POST_SMURFS";
 
 export const getData = () => {
   return dispatch => {
@@ -19,13 +18,3 @@ export const getData = () => {
       })
   }
 }
-
-// export const postData = () => {
-//   return dispatch => {
-//     axios
-//       .post("http://localhost:3333/smurfs")
-//       .then (response => {
-//         dispatch({ type: POST_SMURFS, payload: response.data })
-//       })
-//   }
-// }

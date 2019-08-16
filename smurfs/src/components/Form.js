@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Form, Field, withFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
+import './Form.css';
 
 function SmurfForm({ errors, touched, status }) {
   const [smurfs, setSmurfs] = useState([])
@@ -13,8 +14,8 @@ function SmurfForm({ errors, touched, status }) {
   }, [status])
   
   return (
-    <div className="user-form">
-      <h1>Smurf Form</h1>
+    <div className="smurf-form">
+      <h1>Enter Your Smurf!</h1>
       <Form>
         {touched.name && errors.name && <p>{errors.name}</p> }
         <Field type="text" name="name" placeholder="Name"/>
