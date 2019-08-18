@@ -22,7 +22,7 @@ function SmurfForm({ errors, touched, status }) {
         {touched.age && errors.age && <p>{errors.age}</p>}
         <Field type="number" name="age" placeholder="Age"/>
         {touched.height && errors.height && <p>{errors.height}</p>}
-        <Field type="text" name="height" placeholder="height"/>
+        <Field type="text" name="height" placeholder="Height"/>
         
         <button type="submit">Submit Smurf</button>
       </Form>
